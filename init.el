@@ -26,6 +26,12 @@
 (setq org-refile-targets '((org-agenda-files :maxlevel . 2)))
 (setq org-archive-location (concat org-directory "/archive.org::"))
 
+(setq org-todo-keywords
+           '((sequence "TODO(t)" "WATING(w)" "FOLLOW_UP(f)" "|" "DONE(d)")
+             (sequence "DISCUSS(D)" "|" "RESOLVED(r)")))
+
+(setq org-tag-alist '(("@work" . ?w) ("@home" . ?h) ("johan_d" . ?j) ("yves_b" . ?y)))
+
 (setq org-capture-templates
       '(("I" "Inbox note - personal" entry (file+headline "~/gtd/personalinbox.org" "Inbox")
               "* TODO %?\n  %i\n  %a")
@@ -35,7 +41,7 @@
               "* TODO %?\n  %i\n  %a")
 	("t" "Todo - work" entry (file+headline "~/gtd/worknotes.org" "Tasks")
               "* TODO %?\n  %i\n  %a")
-             ("j" "Journal" entry (file+datetree "~/gtd/journal.org")
+        ("j" "Journal" entry (file+datetree "~/gtd/journal.org")
               "* %?\nEntered on %U\n  %i\n  %a")))
 
 (add-hook 'org-mode-hook (lambda ()
