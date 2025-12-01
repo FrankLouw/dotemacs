@@ -59,6 +59,7 @@
     (if (not (file-directory-p default-directory))
         (message "GTD directory not found: %s" default-directory)
       (message "Syncing GTD folder...")
+      (org-save-all-org-buffers)
       ;; Check for any changes (staged or unstaged)
       (if (zerop (shell-command "git diff-index --quiet HEAD --"))
           ;; No local changes, just pull and push
