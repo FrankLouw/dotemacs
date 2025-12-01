@@ -97,3 +97,7 @@
                   (message "Emacs config synced successfully")
                 (message "Emacs config: Push failed"))
             (message "Emacs config: Conflicts detected - resolve manually and run git rebase --continue")))))))
+
+
+(add-hook 'kill-emacs-hook #'my/sync-emacs-config)
+(add-hook 'kill-emacs-hook #'my/sync-gtd)
