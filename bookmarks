@@ -1,0 +1,17 @@
+;;;; Emacs Bookmark Format Version 1;;;; -*- coding: utf-8-emacs; mode: lisp-data -*-
+;;; This format is meant to be slightly human-readable;
+;;; nevertheless, you probably don't want to edit it.
+;;; -*- End Of Bookmark File Format Version Stamp -*-
+(("workinbox.org"
+ (filename . "~/gtd/workinbox.org")
+ (front-context-string . "Planning for app")
+ (rear-context-string . "e UE license\n** ")
+ (position . 1148)
+ (last-modified 26925 44754 964261 0))
+("init.el"
+ (filename . "~/.emacs.d/init.el")
+ (front-context-string . "\n(require 'use-p")
+ (rear-context-string . "-binding: t; -*-")
+ (position . 31)
+ (last-modified 26925 44672 333288 0))
+)
