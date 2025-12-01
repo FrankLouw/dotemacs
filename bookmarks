@@ -2,7 +2,13 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("workinbox.org"
+(("org-refile-last-stored"
+ (filename . "~/gtd/worknotes.org")
+ (front-context-string . "** StreamNative ")
+ (rear-context-string . "ing correctly?\n\n")
+ (position . 8877)
+ (last-modified 26925 45110 141640 0))
+("workinbox.org"
  (filename . "~/gtd/workinbox.org")
  (front-context-string . "Planning for app")
  (rear-context-string . "e UE license\n** ")

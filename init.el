@@ -28,7 +28,7 @@
 (setq org-archive-location (concat org-directory "/archive.org::"))
 
 (setq org-todo-keywords
-           '((sequence "TODO(t)" "WATING(w)" "FOLLOW_UP(f)" "|" "DONE(d)")
+           '((sequence "TODO(t)" "NEXT ACTION(n)" "WAITING(w)" "FOLLOW UP(f)" "|" "DONE(d)")
              (sequence "DISCUSS(D)" "|" "RESOLVED(r)")))
 
 (setq org-tag-alist '(("@work" . ?w) ("@home" . ?h) ("johan_d" . ?j) ("yves_b" . ?y)))
@@ -50,3 +50,50 @@
 			   (visual-line-mode)))
 
 (set-face-attribute 'default nil :height 130)
+
+
+(defun my/sync-gtd ()
+  "Sync ~/gtd folder with git: add, commit, pull, and push changes."
+  (interactive)
+  (let ((default-directory (expand-file-name "~/gtd/")))
+    (if (not (file-directory-p default-directory))
+        (message "GTD directory not found: %s" default-directory)
+      (message "Syncing GTD folder...")
+      ;; Check for any changes (staged or unstaged)
+      (if (zerop (shell-command "git diff-index --quiet HEAD --"))
+          ;; No local changes, just pull and push
+          (progn
+            (shell-command "git pull --rebase")
+            (shell-command "git push -u origin HEAD")
+            (message "GTD synced successfully"))
+        ;; Has local changes: stage, commit, pull, push
+        (shell-command "git add -A")
+        (let ((timestamp (format-time-string "%Y-%m-%d %H:%M:%S")))
+          (when (zerop (shell-command (format "git commit -m \"Auto-sync: %s\"" timestamp)))
+            (if (zerop (shell-command "git pull --rebase"))
+                (if (zerop (shell-command "git push -u origin HEAD"))
+                    (message "GTD synced successfully")
+                  (message "GTD: Push failed"))
+              (message "GTD: Conflicts detected - resolve manually and run git rebase --continue"))))))))
+
+(defun my/sync-emacs-config ()
+  "Sync Emacs config directory with git: add, commit, pull, and push changes."
+  (interactive)
+  (let ((default-directory user-emacs-directory))
+    (message "Syncing Emacs config...")
+    ;; Check for any changes
+    (if (zerop (shell-command "git diff-index --quiet HEAD --"))
+        ;; No local changes
+        (progn
+          (shell-command "git pull --rebase")
+          (shell-command "git push -u origin HEAD")
+          (message "Emacs config synced successfully"))
+      ;; Has local changes
+      (shell-command "git add -A")
+      (let ((timestamp (format-time-string "%Y-%m-%d %H:%M:%S")))
+        (when (zerop (shell-command (format "git commit -m \"Auto-sync: %s\"" timestamp)))
+          (if (zerop (shell-command "git pull --rebase"))
+              (if (zerop (shell-command "git push -u origin HEAD"))
+                  (message "Emacs config synced successfully")
+                (message "Emacs config: Push failed"))
+            (message "Emacs config: Conflicts detected - resolve manually and run git rebase --continue")))))))
