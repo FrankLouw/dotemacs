@@ -1,4 +1,5 @@
 ;; -*- lexical-binding: t; -*-
+;; test commit comment
 (require 'use-package-ensure)
 (setq use-package-always-ensure t)
 (global-set-key [remap dabbrev-expand] 'hippie-expand)
