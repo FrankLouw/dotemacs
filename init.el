@@ -49,7 +49,7 @@
 			   (org-indent-mode)
 			   (visual-line-mode)))
 
-(set-face-attribute 'default nil :height 130)
+;;(set-face-attribute 'default nil :height 130)
 
 
 (defun my/sync-gtd ()

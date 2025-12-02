@@ -9,11 +9,11 @@
  (position . 1)
  (last-modified 26925 46880 314426 0))
 ("org-refile-last-stored"
- (filename . "~/gtd/personalagendas.org")
- (front-context-string . "*** DISCUSS Xmas")
- (rear-context-string . "gendas\n** Hanja\n")
- (position . 70)
- (last-modified 26925 48559 563848 0))
+ (filename . "~/gtd/workagendas.org")
+ (front-context-string . "*** DISCUSS Conf")
+ (rear-context-string . "port completion\n")
+ (position . 443)
+ (last-modified 26926 61959 566237 0))
 ("workinbox.org"
  (filename . "~/gtd/workinbox.org")
  (front-context-string . "Planning for app")
