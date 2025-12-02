@@ -9,11 +9,11 @@
  (position . 1)
  (last-modified 26925 46880 314426 0))
 ("org-refile-last-stored"
- (filename . "~/gtd/workagendas.org")
- (front-context-string . "*** DISCUSS Conf")
- (rear-context-string . "port completion\n")
- (position . 443)
- (last-modified 26926 61959 566237 0))
+ (filename . "~/gtd/workprojects.org")
+ (front-context-string . "** Call with Way")
+ (rear-context-string . "ow to get there\n")
+ (position . 4689)
+ (last-modified 26927 19052 879105 0))
 ("workinbox.org"
  (filename . "~/gtd/workinbox.org")
  (front-context-string . "Planning for app")

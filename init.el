@@ -31,25 +31,33 @@
            '((sequence "TODO(t)" "NEXT ACTION(n)" "WAITING(w)" "FOLLOW UP(f)" "|" "DONE(d)")
              (sequence "DISCUSS(D)" "|" "RESOLVED(r)")))
 
-(setq org-tag-alist '(("@work" . ?w) ("@home" . ?h) ("johan_d" . ?j) ("yves_b" . ?y) ("yarden_a" . ?Y) ("nevin_j" . ?n)))
+;; (setq org-tag-alist
+;;       '(
+;; 	("@work" . ?w)
+;; 	("@home" . ?h)
+;; 	("johan_d" . ?j)
+;; 	("yves_b" . ?y)
+;; 	("yarden_a" . ?Y)
+;; 	("nevin_j" . ?n)
+;; 	))
 
 (setq org-capture-templates
       '(("I" "Inbox note - personal" entry (file+headline "~/gtd/personalinbox.org" "Inbox")
-              "* TODO %?\n  %i\n  %a")
+         "* TODO %?\n  %i\n  %a")
 	("i" "Inbox note - work" entry (file+headline "~/gtd/workinbox.org" "Inbox")
-              "* TODO %?\n  %i\n  %a")
+         "* TODO %?\n  %i\n  %a")
 	("T" "Todo - personal" entry (file+headline "~/gtd/personalnotes.org" "Tasks")
-              "* TODO %?\n  %i\n  %a")
+         "* TODO %?\n  %i\n  %a")
 	("t" "Todo - work" entry (file+headline "~/gtd/worknotes.org" "Tasks")
-              "* TODO %?\n  %i\n  %a")
+         "* TODO %?\n  %i\n  %a")
         ("j" "Journal" entry (file+datetree "~/gtd/journal.org")
-              "* %?\nEntered on %U\n  %i\n  %a")))
+         "* %?\nEntered on %U\n  %i\n  %a")))
 
 (add-hook 'org-mode-hook (lambda ()
 			   (org-indent-mode)
 			   (visual-line-mode)))
 
-;;(set-face-attribute 'default nil :height 130)
+(set-face-attribute 'default nil :height 130)
 
 
 (defun my/sync-gtd ()
