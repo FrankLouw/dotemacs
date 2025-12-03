@@ -28,7 +28,7 @@
 (setq org-archive-location (concat org-directory "/archive.org::"))
 
 (setq org-todo-keywords
-           '((sequence "TODO(t)" "NEXT ACTION(n)" "WAITING(w)" "FOLLOW UP(f)" "|" "DONE(d)")
+           '((sequence "TODO(t)" "NEXT ACTION(n)" "FOLLOW UP(f)" "|" "DONE(d)")
              (sequence "DISCUSS(D)" "|" "RESOLVED(r)")))
 
 (setq org-tag-alist
