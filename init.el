@@ -31,15 +31,16 @@
            '((sequence "TODO(t)" "NEXT ACTION(n)" "WAITING(w)" "FOLLOW UP(f)" "|" "DONE(d)")
              (sequence "DISCUSS(D)" "|" "RESOLVED(r)")))
 
-;; (setq org-tag-alist
-;;       '(
-;; 	("@work" . ?w)
-;; 	("@home" . ?h)
-;; 	("johan_d" . ?j)
-;; 	("yves_b" . ?y)
-;; 	("yarden_a" . ?Y)
-;; 	("nevin_j" . ?n)
-;; 	))
+(setq org-tag-alist
+      '(
+	("@work" . ?w)
+	("@home" . ?h)
+	("johan_d" . ?j)
+	("yves_b" . ?y)
+	("yarden_a" . ?Y)
+	("nevin_j" . ?n)
+	("wayne_c" . ?w)
+	))
 
 (setq org-capture-templates
       '(("I" "Inbox note - personal" entry (file+headline "~/gtd/personalinbox.org" "Inbox")
