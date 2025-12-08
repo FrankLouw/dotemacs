@@ -3,7 +3,7 @@
 (setq use-package-always-ensure t)
 (global-set-key [remap dabbrev-expand] 'hippie-expand)
 (global-set-key [remap list-buffers] 'ibuffer)
-
+(set-frame-font "Consolas" nil t)
 
 (tool-bar-mode 0)
 (scroll-bar-mode 0)
@@ -28,11 +28,18 @@
 (setq org-archive-location (concat org-directory "/archive.org::"))
 
 (setq org-todo-keywords
-      '((sequence "TODO(t)" "NEXT(n)" "|" "DONE(d)")
-	(sequence "WAITING(w)" "|" "DONE(d)")
-	(sequence "SOMEDAY(s)")
-	(sequence "CANCELLED(c)")
-        (sequence "DISCUSS(D)" "|" "RESOLVED(r)")))
+      '((sequence "TODO(t!)" "NEXT(n!)" "|" "DONE(d!)")
+	(sequence "WAITING(w!)" "|" "DONE(d!)")
+	(sequence "SOMEDAY(s!)")
+	(sequence "CANCELLED(c!)")
+        (sequence "DISCUSS(D!)" "|" "RESOLVED(r!)")))
+
+(setq org-todo-keyword-faces
+      '(
+	("SOMEDAY" . "blue")
+	("WAITING" . "purple")
+	("TODO" . "orange")
+	))
 
 (setq org-tag-alist
       '(
