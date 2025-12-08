@@ -22,7 +22,7 @@
 (keymap-global-set "C-c l" 'org-store-link)
 ;; Org-mode
 (setq org-directory "~/gtd")
-(setq org-default-notes-file (concat org-directory "inbox.org"))
+(setq org-default-notes-file (concat org-directory "worknotes.org"))
 (setq org-agenda-files (list org-directory))
 (setq org-refile-targets '((org-agenda-files :maxlevel . 2)))
 (setq org-archive-location (concat org-directory "/archive.org::"))
@@ -52,7 +52,7 @@
 (setq org-capture-templates
       '(("I" "Inbox note - personal" entry (file+headline "~/gtd/personalinbox.org" "Inbox")
          "* TODO %?\n  %i\n  %a")
-	("i" "Inbox note - work" entry (file+headline "~/gtd/workinbox.org" "Inbox")
+	("i" "Inbox note - work" entry (file+headline "~/gtd/worknotes.org" "Inbox")
          "* TODO %?\n  %i\n  %a")
 	("T" "Todo - personal" entry (file+headline "~/gtd/personalnotes.org" "Tasks")
          "* TODO %?\n  %i\n  %a")
