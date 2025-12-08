@@ -3,7 +3,7 @@
 (setq use-package-always-ensure t)
 (global-set-key [remap dabbrev-expand] 'hippie-expand)
 (global-set-key [remap list-buffers] 'ibuffer)
-(set-frame-font "Consolas" nil t)
+(set-frame-font "Comic Sans MS" nil t)
 
 (tool-bar-mode 0)
 (scroll-bar-mode 0)
@@ -46,7 +46,7 @@
 	("@work" . ?w)
 	("@home" . ?h)
        	("@agenda" . ?a)
-        ("@errands" . ?e)
+            ("@errands" . ?e)
 	("quick" . ?q)
 	("deep" . ?d)
 	("johan_d" . ?j)
