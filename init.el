@@ -28,13 +28,20 @@
 (setq org-archive-location (concat org-directory "/archive.org::"))
 
 (setq org-todo-keywords
-           '((sequence "TODO(t)" "NEXT ACTION(n)" "FOLLOW UP(f)" "|" "DONE(d)")
-             (sequence "DISCUSS(D)" "|" "RESOLVED(r)")))
+      '((sequence "TODO(t)" "NEXT(n)" "|" "DONE(d)")
+	(sequence "WAITING(w)" "|" "DONE(d)")
+	(sequence "SOMEDAY(s)")
+	(sequence "CANCELLED(c)")
+        (sequence "DISCUSS(D)" "|" "RESOLVED(r)")))
 
 (setq org-tag-alist
       '(
 	("@work" . ?w)
 	("@home" . ?h)
+       	("@agenda" . ?a)
+        ("@errands" . ?e)
+	("quick" . ?q)
+	("deep" . ?d)
 	("johan_d" . ?j)
 	("yves_b" . ?y)
 	("yarden_a" . ?Y)
