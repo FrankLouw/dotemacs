@@ -2,7 +2,13 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("worknotes.org"
+(("org-capture-last-stored"
+ (filename . "~/gtd/worknotes.org")
+ (front-context-string . "** Electrical me")
+ (rear-context-string . " backend to k8s\n")
+ (position . 250)
+ (last-modified 26935 2057 149973 0))
+("worknotes.org"
  (filename . "~/gtd/worknotes.org")
  (front-context-string . ":File_setup:\n#+T")
  (rear-context-string)

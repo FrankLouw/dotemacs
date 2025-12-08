@@ -3,7 +3,7 @@
 (setq use-package-always-ensure t)
 (global-set-key [remap dabbrev-expand] 'hippie-expand)
 (global-set-key [remap list-buffers] 'ibuffer)
-(set-frame-font "Iosevka NFM" nil t)
+;;(set-frame-font "Iosevka NFM 14" nil t)
 
 (tool-bar-mode 0)
 (scroll-bar-mode 0)
