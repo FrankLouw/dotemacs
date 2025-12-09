@@ -30,7 +30,7 @@
 (setq org-todo-keywords
       '((sequence "TODO(t!)" "NEXT(n!)" "|" "DONE(d!)")
 	(sequence "WAITING(w!)" "|" "DONE(d!)")
-	(sequence "SOMEDAY(s!)")
+	(sequence "SOMEDAY(s!)" "MAYBE(m!)")
 	(sequence "CANCELLED(c!)")
         (sequence "DISCUSS(D!)" "|" "RESOLVED(r!)")))
 
@@ -39,6 +39,7 @@
 (setq org-todo-keyword-faces
       '(
 	("SOMEDAY" . "blue")
+	("MAYBE" . "blue")
 	("WAITING" . "purple")
 	("TODO" . "orange")
 	))
@@ -48,7 +49,7 @@
 	("@work" . ?w)
 	("@home" . ?h)
        	("@agenda" . ?a)
-            ("@errands" . ?e)
+        ("@errands" . ?e)
 	("quick" . ?q)
 	("deep" . ?d)
 	("johan_d" . ?j)

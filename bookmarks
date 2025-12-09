@@ -15,11 +15,11 @@
  (position . 1)
  (last-modified 26925 46880 314426 0))
 ("org-refile-last-stored"
- (filename . "~/gtd/reference.org")
- (front-context-string . "** Meeting with ")
- (rear-context-string . " 136.226.0.0/16\n")
- (position . 2523)
- (last-modified 26934 58652 686071 0))
+ (filename . "~/gtd/worknotes.org")
+ (front-context-string . "** Revise Nevin'")
+ (rear-context-string . "2-08 Mon 09:47]\n")
+ (position . 11641)
+ (last-modified 26935 3075 612557 0))
 ("init.el"
  (filename . "~/.emacs.d/init.el")
  (front-context-string . "\n(require 'use-p")
