@@ -16,10 +16,10 @@
  (last-modified 26925 46880 314426 0))
 ("org-refile-last-stored"
  (filename . "~/gtd/worknotes.org")
- (front-context-string . "*** DONE Deploy ")
- (rear-context-string . "** infraRED Ops\n")
- (position . 9530)
- (last-modified 26936 22121 248644 0))
+ (front-context-string . "*** infraRED Ele")
+ (rear-context-string . " engine version\n")
+ (position . 8402)
+ (last-modified 26937 39182 226536 0))
 ("init.el"
  (filename . "~/.emacs.d/init.el")
  (front-context-string . "\n(require 'use-p")
