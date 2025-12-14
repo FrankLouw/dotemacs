@@ -6,7 +6,7 @@
 ;;(set-frame-font "Comic Sans MS 14" nil t)
 (add-hook 'org-mode-hook
           (lambda ()
-            (setq buffer-face-mode-face '(:family "Comic Sans MS" :height 120))
+            (setq buffer-face-mode-face '(:family "Comic Sans MS" :height 140))
             (buffer-face-mode)))
 
 (tool-bar-mode 0)
