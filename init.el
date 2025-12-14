@@ -4,10 +4,10 @@
 (global-set-key [remap dabbrev-expand] 'hippie-expand)
 (global-set-key [remap list-buffers] 'ibuffer)
 ;;(set-frame-font "Comic Sans MS 14" nil t)
-(add-hook 'org-mode-hook
-          (lambda ()
-            (setq buffer-face-mode-face '(:family "Comic Sans MS" :height 140))
-            (buffer-face-mode)))
+;; (add-hook 'org-mode-hook
+;;           (lambda ()
+;;             (setq buffer-face-mode-face '(:family "Comic Sans MS" :height 140))
+;;             (buffer-face-mode)))
 
 (tool-bar-mode 0)
 (scroll-bar-mode 0)
