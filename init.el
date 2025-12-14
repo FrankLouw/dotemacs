@@ -3,7 +3,9 @@
 (setq use-package-always-ensure t)
 (global-set-key [remap dabbrev-expand] 'hippie-expand)
 (global-set-key [remap list-buffers] 'ibuffer)
-;;(set-frame-font "Iosevka NFM 14" nil t)
+;;(set-frame-font "Comic Sans MS 14" nil t)
+(custom-set-faces
+ '(org-default ((t (:family "Comic Sans MS" :height 120)))))
 
 (tool-bar-mode 0)
 (scroll-bar-mode 0)
