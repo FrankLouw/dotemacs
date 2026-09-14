@@ -1,13 +1,19 @@
 ;; -*- lexical-binding: t; -*-
 (require 'use-package-ensure)
 (setq use-package-always-ensure t)
+
+;; Set up org entry encryption using symmetric keys:
+(with-eval-after-load 'epa
+  (setq epa-pinentry-mode 'loopback))
+(with-eval-after-load 'org
+  (require 'org-crypt)
+  (setq epg-gpg-program "gpg")
+  (org-crypt-use-before-save-magic)
+  (setq org-tags-exclude-from-inheritance '("crypt"))
+  (setq org-crypt-key nil))
+
 (global-set-key [remap dabbrev-expand] 'hippie-expand)
 (global-set-key [remap list-buffers] 'ibuffer)
-;;(set-frame-font "Comic Sans MS 14" nil t)
-;; (add-hook 'org-mode-hook
-;;           (lambda ()
-;;             (setq buffer-face-mode-face '(:family "Comic Sans MS" :height 140))
-;;             (buffer-face-mode)))
 
 (tool-bar-mode 0)
 (scroll-bar-mode 0)
@@ -26,7 +32,7 @@
 (keymap-global-set "C-c l" 'org-store-link)
 ;; Org-mode
 (setq org-directory "~/gtd")
-(setq org-default-notes-file (concat org-directory "worknotes.org"))
+(setq org-default-notes-file (concat org-directory "/worknotes.org"))
 (setq org-agenda-files (list org-directory))
 (setq org-refile-targets '((org-agenda-files :maxlevel . 2)))
 (setq org-archive-location (concat org-directory "/archive.org::"))
