@@ -32,6 +32,7 @@
 (keymap-global-set "C-c l" 'org-store-link)
 
 (keymap-global-set "C-c u" 'my/sync-all)
+
 ;; Org-mode
 (setq org-directory "~/gtd")
 (setq org-default-notes-file (concat org-directory "/worknotes.org"))
