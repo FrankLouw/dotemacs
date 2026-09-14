@@ -30,6 +30,8 @@
 (keymap-global-set "C-c c" 'org-capture)
 (keymap-global-set "C-c a" 'org-agenda)
 (keymap-global-set "C-c l" 'org-store-link)
+
+(keymap-global-set "C-c u" 'my/sync-all)
 ;; Org-mode
 (setq org-directory "~/gtd")
 (setq org-default-notes-file (concat org-directory "/worknotes.org"))
@@ -135,6 +137,10 @@
                 (message "Emacs config: Push failed"))
             (message "Emacs config: Conflicts detected - resolve manually and run git rebase --continue")))))))
 
+(defun my/sync-all()
+  (interactive)
+  (my/sync-emacs-config)
+  (my/sync-gtd))
 
 (add-hook 'kill-emacs-hook #'my/sync-emacs-config)
 (add-hook 'kill-emacs-hook #'my/sync-gtd)
