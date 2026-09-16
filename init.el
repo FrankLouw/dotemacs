@@ -47,7 +47,7 @@
 	(sequence "CANCELLED(c!)")
         (sequence "DISCUSS(D!)" "|" "RESOLVED(r!)")))
 
-(customize-set-variable 'org-log-into-drawer t)
+;; (customize-set-variable 'org-log-into-drawer t)
 
 (setq org-todo-keyword-faces
       '(
