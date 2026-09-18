@@ -85,9 +85,8 @@
          "* %?\nEntered on %U\n  %i\n  %a")))
 
 (add-hook 'org-mode-hook (lambda ()
-			   (org-indent-mode)
 			   (visual-line-mode)))
-
+			   ;; (org-indent-mode)
 (set-face-attribute 'default nil :height 130)
 
 
@@ -145,3 +144,4 @@
 
 (add-hook 'kill-emacs-hook #'my/sync-emacs-config)
 (add-hook 'kill-emacs-hook #'my/sync-gtd)
+(put 'narrow-to-region 'disabled nil)
