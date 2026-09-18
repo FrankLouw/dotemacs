@@ -40,6 +40,8 @@
 (setq org-refile-targets '((org-agenda-files :maxlevel . 2)))
 (setq org-archive-location (concat org-directory "/archive.org::"))
 
+(setq org-use-speed-commands t)
+
 (setq org-todo-keywords
       '((sequence "TODO(t!)" "NEXT(n!)" "|" "DONE(d!)")
 	(sequence "WAITING(w!)" "|" "DONE(d!)")
