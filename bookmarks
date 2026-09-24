@@ -3,11 +3,11 @@
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
 (("org-capture-last-stored"
-  (filename . "~/gtd/worknotes.org")
-  (front-context-string . "** Electrical me")
-  (rear-context-string . " backend to k8s\n")
-  (position . 250)
-  (last-modified 26935 2057 149973 0))
+ (filename . "~/gtd/worknotes.org")
+ (front-context-string . "** Electrical me")
+ (rear-context-string . " backend to k8s\n")
+ (position . 250)
+ (last-modified 26935 2057 149973 0))
 ("worknotes.org"
  (filename . "~/gtd/worknotes.org")
  (front-context-string . ":File_setup:\n#+T")
@@ -15,11 +15,11 @@
  (position . 1)
  (last-modified 26925 46880 314426 0))
 ("org-refile-last-stored"
- (filename . "~/gtd/worknotes.org")
- (front-context-string . "** Ethan on boar")
- (rear-context-string . "veryone\n* Tasks\n")
- (position . 897)
- (last-modified 27306 48168 36367 508000))
+ (filename . "~/gtd/reference.org")
+ (front-context-string . "** Vault login  ")
+ (rear-context-string . " 136.226.0.0/16\n")
+ (position . 2583)
+ (last-modified 27315 60133 576011 361000))
 ("init.el"
  (filename . "~/.emacs.d/init.el")
  (front-context-string . "\n(require 'use-p")
