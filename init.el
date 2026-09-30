@@ -89,7 +89,7 @@
 (add-hook 'org-mode-hook (lambda ()
 			   (visual-line-mode)))
 			   ;; (org-indent-mode)
-(set-face-attribute 'default nil :height 130)
+(set-face-attribute 'default nil :height 150)
 
 
 (defun my/sync-gtd ()
