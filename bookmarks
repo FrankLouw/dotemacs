@@ -4,10 +4,10 @@
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
 (("org-capture-last-stored"
  (filename . "~/gtd/worknotes.org")
- (front-context-string . "** TODO Schedule")
- (rear-context-string . "9-25 Fri 11:53]\n")
- (position . 4558)
- (last-modified 27324 62606 152478 428000))
+ (front-context-string . "** TODO Swap out")
+ (rear-context-string . "0-05 Mon 10:14]\n")
+ (position . 4087)
+ (last-modified 27331 64729 767492 536000))
 ("worknotes.org"
  (filename . "~/gtd/worknotes.org")
  (front-context-string . ":File_setup:\n#+T")
@@ -15,11 +15,11 @@
  (position . 1)
  (last-modified 26925 46880 314426 0))
 ("org-refile-last-stored"
- (filename . "~/gtd/meetings.org")
- (front-context-string . "** Meeting with ")
- (rear-context-string . "> adactl Yarden\n")
- (position . 3371)
- (last-modified 27327 58849 282335 42000))
+ (filename . "~/gtd/gtd.org")
+ (front-context-string . "** Emacs gtd too")
+ (rear-context-string . "sonalnotes.org\n\n")
+ (position . 2206)
+ (last-modified 27333 12390 87521 364000))
 ("init.el"
  (filename . "~/.emacs.d/init.el")
  (front-context-string . "\n(require 'use-p")
