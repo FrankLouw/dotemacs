@@ -4,10 +4,10 @@
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
 (("org-capture-last-stored"
  (filename . "~/gtd/worknotes.org")
- (front-context-string . "** TODO Swap out")
- (rear-context-string . "0-05 Mon 10:14]\n")
- (position . 4087)
- (last-modified 27331 64729 767492 536000))
+ (front-context-string . "** TODO talk to ")
+ (rear-context-string . "ation docs\n*** \n")
+ (position . 4138)
+ (last-modified 27337 12616 396719 368000))
 ("worknotes.org"
  (filename . "~/gtd/worknotes.org")
  (front-context-string . ":File_setup:\n#+T")
