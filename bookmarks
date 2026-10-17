@@ -15,11 +15,11 @@
  (position . 1)
  (last-modified 26925 46880 314426 0))
 ("org-refile-last-stored"
- (filename . "~/gtd/infraRED.org")
- (front-context-string . "** infraRED Anal")
- (rear-context-string . " sub\n* Meetings\n")
- (position . 1987)
- (last-modified 27344 56773 683140 896000))
+ (filename . "~/gtd/people.org")
+ (front-context-string . "** Driver at For")
+ (rear-context-string . "** Evan and Mar\n")
+ (position . 46)
+ (last-modified 27347 31555 632787 113000))
 ("init.el"
  (filename . "~/.emacs.d/init.el")
  (front-context-string . "\n(require 'use-p")
