@@ -15,6 +15,10 @@
 (global-set-key [remap dabbrev-expand] 'hippie-expand)
 (global-set-key [remap list-buffers] 'ibuffer)
 
+(setq make-backup-files nil) ; stop creating backup~ files
+(setq auto-save-default nil) ; stop creating #autosave# files
+
+
 (tool-bar-mode 0)
 (scroll-bar-mode 0)
 (fido-vertical-mode t)
